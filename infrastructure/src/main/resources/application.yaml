@@ -1,0 +1,18 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+    url: jdbc:h2:mem:testdb;MODE=PostgreSQL;DB_CLOSE_DELAY=-1
+    hikari:
+      pool-name: pool
+
+jwt:
+  secret: HolaMundo!
+  duration: 20
+  issuer: dagarciah@hotmail.com
